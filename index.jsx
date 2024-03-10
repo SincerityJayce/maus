@@ -1,6 +1,6 @@
 import {create} from "zustand";
 
-const useMouse = create((set) => {
+export const useMouse = create((set) => {
  window.addEventListener('mousemove', e=> set({left:e.clientX, top:e.clientY}))
  return {
   position:'absolute',
